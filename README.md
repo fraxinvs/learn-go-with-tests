@@ -1,5 +1,5 @@
 # Learn Go with tests exercises
-Following [Learn Go with tests](https://quii.gitbook.io/learn-go-with-tests) to create a set of Go programming exercises using TDD
+A collection of Go programming exercises inspired by [Learn Go with tests](https://quii.gitbook.io/learn-go-with-tests), developed using Test-Driven Development (TDD) practices. This repository serves as a personal project to refresh and deepen my knowledge of Go while exploring TDD methodologies.
 
 # Dependencies
 There are some dependencies that are needed to run this project. These can be installed using the instructions below.
