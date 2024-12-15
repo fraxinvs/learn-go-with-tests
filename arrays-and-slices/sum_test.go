@@ -3,12 +3,14 @@ package arraysandslices
 import "testing"
 
 func Test_Sum(t *testing.T) {
-	numbers := [5]int{1, 2, 3, 4, 5}
+	t.Run("should sum a collection of any size", func(t *testing.T) {
+		numbers := []int{1, 2, 3}
 
-	got := Sum(numbers)
-	want := 15
+		got := Sum(numbers)
+		want := 6
 
-	if got != want {
-		t.Errorf("got: %q, want: %q, given: %v", got, want, numbers)
-	}
+		if got != want {
+			t.Errorf("got: %q, want: %q, given: %v", got, want, numbers)
+		}
+	})
 }
