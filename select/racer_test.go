@@ -8,8 +8,8 @@ import (
 )
 
 func Test_Racer(t *testing.T) {
-	slowServer := makeDeplayedServer(20 * time.Nanosecond)
-	fastServer := makeDeplayedServer(0 * time.Nanosecond)
+	slowServer := makeDeplayedServer(20 * time.Millisecond)
+	fastServer := makeDeplayedServer(0 * time.Millisecond)
 
 	defer slowServer.Close()
 	defer fastServer.Close()
