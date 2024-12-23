@@ -32,6 +32,14 @@ func Test_Walk(t *testing.T) {
 			}{"John", 33},
 			[]string{"John"},
 		},
+		{
+			"nested fields",
+			Person{
+				"John",
+				Profile{33, "London"},
+			},
+			[]string{"John", "London"},
+		},
 	}
 
 	for _, test := range cases {
@@ -46,4 +54,14 @@ func Test_Walk(t *testing.T) {
 			}
 		})
 	}
+}
+
+type Person struct {
+	Name    string
+	Profile Profile
+}
+
+type Profile struct {
+	Age  int
+	City string
 }
